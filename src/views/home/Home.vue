@@ -8,6 +8,7 @@
   </div>
   <hd :huodong="huodong" :hdtitle="hdtitle"/>
   <xia-zai/>
+  <lol-img/>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import LolNavBar from 'components/content/lolnavbar/LolNavBar.vue'
 import LolSwiper from 'components/content/lolswiper/LolSwiper.vue'
 import Hd from 'components/content/remenhuodong/Hd.vue'
 import XiaZai from '../../components/content/xiazai/XiaZai.vue'
+import LolImg from '../../components/content/lolimage/LolImg.vue'
 export default {
   name:'Home',
    components:{
@@ -27,7 +29,8 @@ export default {
     NewsControl,
     NewsItem,
     Hd,
-    XiaZai
+    XiaZai,
+      LolImg
   },
   data() {
     return {
