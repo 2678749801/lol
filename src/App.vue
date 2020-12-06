@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-    <lol-nav-bar/>
-    <lol-swiper/>
-    <lol-new/>
+    <keep-alive>
+    <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 <script>
-import LolNavBar from './components/content/lolnavbar/LolNavBar.vue'
-import LolSwiper from './components/content/lolswiper/LolSwiper.vue'
-import LolNew from './components/content/lolnews/LolNew'
+
 export default {
   name:'app',
-  components:{
-    LolNavBar,
-    LolSwiper,
-    LolNew
-  },
+ 
   created() {
     
   },
@@ -27,5 +21,7 @@ export default {
 </script>
 <style scoped>
 @import "./assets/css/normalize.css";
-
+/* #app{
+  position: relative;
+} */
 </style>

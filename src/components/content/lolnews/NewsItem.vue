@@ -30,7 +30,7 @@ export default {
     mouseLeave($event){
       $event.currentTarget.className="news-item-item";
     }
-  },
+  },//通过监听鼠标事件 动态的绑定class从而达到不同的样式
 }
 </script>
 

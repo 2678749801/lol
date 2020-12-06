@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      currentIndex:0
+      currentIndex:0//用来控制谁被选中 当发生点击时 外面通过ref来改变值
     }
   },
   methods: {

@@ -10,35 +10,21 @@
 </template>
 
 <script>
-import {getHomeMultidata} from 'network/home'
 import Swiper from '../../common/swiper/Swiper.vue'
 import SwiperItem from '../../common/swiper/SwiperItem.vue'
 export default {
   components: { Swiper, SwiperItem },
   name:'LolSwiper',
-  data() {
-    return {
-      swiper:[]
+  props:{
+    swiper:{
+      type:Array,
+      default(){
+        return[]
+      }
     }
-  },
-  created() {
-    this.getHomeMultidata()
-  },
-  methods: {
-    getHomeMultidata(){
-       getHomeMultidata().then(res=>{
-         this.swiper=res.swiper
-         
-        //  console.log(res)
-      // this.banners=res.data.banner.list;
-      // this.recommends=res.data.recommend.list;
-      // console.log(this.title)
-    })
-    },
   },
 }
 </script>
-
 <style scoped>
 .lol-swiper{
   margin-top: 30px;
@@ -46,7 +32,6 @@ export default {
   width: 60%;
   margin-left: 20px;
 }
-
 .swiper-title{
   height: 30px;
   font-size: 13px;
@@ -60,8 +45,6 @@ export default {
   flex: 1;
   text-align: center;
   margin-top: 10px;
-   /* background-color: darkgray; */
   color: 	#696969;
-  
 }
 </style>
