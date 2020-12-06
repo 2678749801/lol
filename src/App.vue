@@ -2,19 +2,19 @@
   <div id="app">
     <lol-nav-bar/>
     <lol-swiper/>
-    <lol-news/>
+    <lol-new/>
   </div>
 </template>
 <script>
 import LolNavBar from './components/content/lolnavbar/LolNavBar.vue'
 import LolSwiper from './components/content/lolswiper/LolSwiper.vue'
-import LolNews from './components/content/lolnews/LolNews'
+import LolNew from './components/content/lolnews/LolNew'
 export default {
   name:'app',
   components:{
     LolNavBar,
     LolSwiper,
-    LolNews
+    LolNew
   },
   created() {
     

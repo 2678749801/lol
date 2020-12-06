@@ -51,7 +51,10 @@ export default {
 }
 .active{
   color:	#0099FF;
-  font-weight:bold
+  font-weight:bold;
+  
 }
-
+.active span{
+border-bottom: 2px solid #0099FF;
+}
 </style>
