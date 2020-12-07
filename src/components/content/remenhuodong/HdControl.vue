@@ -10,7 +10,7 @@
         @mouseleave="mouseLeave($event)"
         >{{item}}</div>
         </div>
-      <div slot="right" class="rtitle"><div>更多-></div></div>
+      <div slot="right" class="rtitle"><a href="https://lol.qq.com/v/v2/index.shtml"><div>更多-></div></a></div>
     </control>
   </div>
 </template>

@@ -66,7 +66,7 @@ export default {
 <style scoped>
 .lolimg{
   margin-left: 20px;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
 }
 
