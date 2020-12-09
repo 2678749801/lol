@@ -21,7 +21,5 @@ export default {
 </script>
 <style scoped>
 @import "./assets/css/normalize.css";
-/* #app{
-  position: relative;
-} */
+
 </style>

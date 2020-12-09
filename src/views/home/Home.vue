@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <lol-nav-bar/>
+    <lol-nav-bar :navbar="navbar"/>
     <lol-swiper :swiper="swiper"/>
   <div class="lol-news">
     <news-control :title="title" @tabClick="tablClick" ref="newscontrol"/>
@@ -41,6 +41,13 @@ export default {
   },
   data() {
     return {
+      navbar:{
+        'ziliao':[],
+        'shangcheng':[],
+        'shequ':[],
+        'saishi':[],
+        'zizhu':[]
+      },
       swiper:[],
       news:{
         'zonghe':[],
@@ -77,6 +84,11 @@ export default {
     getHomeMultidata(){//请求数据 并对接口数据进行筛选
        getHomeMultidata().then(res=>{
          this.swiper=res.swiper;
+         this.navbar.ziliao.push(...res.navbar.ziliao);
+         this.navbar.shangcheng.push(...res.navbar.shangcheng);
+         this.navbar.shequ.push(...res.navbar.shequ);
+         this.navbar.saishi.push(...res.navbar.saishi);
+         this.navbar.zizhu.push(...res.navbar.zizhu);
          this.news.zonghe.push(...res.news.zonghe);
          this.news.gonggao.push(...res.news.gonggao);
          this.news.saishi.push(...res.news.saishi);

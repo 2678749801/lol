@@ -89,11 +89,11 @@ li{
   list-style: none;
   line-height: 30px;
 }
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 16px;
- background: #fff;
- height: 14px;
-  }
+  background: #fff;
+  height: 14px;
+}
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
@@ -110,6 +110,6 @@ li{
   box-shadow: 0 0 0 5px 		#D8D8D8 inset;
 }
 /* ::-webkit-scrollbar-corner {
-  background: #191a37;
+   background: #191a37;
 } */
 </style>
