@@ -1,6 +1,6 @@
 <template>
   <div id="lolnavbar">
-    <nav-bar class="nav-bar"  >
+    <nav-bar class="nav-bar" path="/ziliao" >
     <div slot="left"><img  class="lolimg"src="http://game.gtimg.cn/images/lol/v3/logo-public.png" alt=""></div>
     <div slot="center" class="title"  @mouseenter="issShow=true" @mouseleave="issShow=false">
       <div class="title-item" v-for="item in titles">
@@ -78,16 +78,17 @@ export default {
 <style scoped>
 #lolnavbar{
   height: 360px;
-  background-image: url(http://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_74d0a9dcec16aa0c6ffa36e247abb043/0);
+  background-image: url(http://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_86cdf7f4bf5c9ac8eabdceb85c97bab8/0);
   background-repeat: no-repeat;
   color:#fff;
   background-position: 50% 0px;
-  
+  width: 100%
 }
 
 .nav-bar{
   background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(rgb(14, 13, 13)), to(#9e8e8e));/*谷歌*/
   opacity: 0.8;
+  
 }
 .title{
   display: flex;
@@ -144,7 +145,7 @@ color: #F8F8F8;
 .banben .banben2{
   color: rgb(235, 172, 95);
   font-size: 13px;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 button{
   

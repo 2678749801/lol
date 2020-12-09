@@ -62,7 +62,7 @@ export default {
   width: 450px;
   height: 340px;
   color: red;
-  left: 880px;
-  top: 380px;
+  left: 40%;
+  top: 40%;
 }
 </style>

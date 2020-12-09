@@ -1,7 +1,12 @@
 <template>
   <div id="hd">
+    <div class="left-hd">
     <hd-control :hdtitle="hdtitle" @itemClick="itemClick" />
     <hd-list :huodong="huodong[currentType]"/>
+    </div>
+    <div class="right-hd">
+
+    </div>
   </div>
 </template>
 

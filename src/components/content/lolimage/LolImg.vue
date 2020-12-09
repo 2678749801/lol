@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div class="lolimg">
     <a href="https://lol.qq.com/act/a20201023seraphine/index.html">
     <div class="img1"  @mouseenter="mouseEnter($event)" @mouseleave="mouseLeave($event)">
@@ -64,6 +64,7 @@ export default {
 </script>
 
 <style scoped>
+
 .lolimg{
   margin-left: 20px;
   /* width: 100%; */
