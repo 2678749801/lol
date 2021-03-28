@@ -13,6 +13,7 @@ export default {
     path: String,
     
   },
+  
   methods: {
     itemClick() {
       this.$router.push(this.path)
